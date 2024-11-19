@@ -1,8 +1,12 @@
 //union (OR -> | ) type
-//it is used when only some values of object need to be satisfy , so we use |
+//it is used when only some property of object need to be satisfy , so we use |
 //e.g
-let UnionObj: {name: string} | {age: number}={
-    name :"union"
+let UnionObj:null | {name: string} | {age: number} | {phone:number} = null ;
+UnionObj={
+    name :"union",
+    phone :9876543211
 }
 console.log(UnionObj);
-//in albove code we set name and age  property but set only values of name it don't shows any warning lines like intesection
+//note : if we wnat ot make null to any property first make null to variable like UnionObj:null in above code
+
+//in above code we set name, age and number as null property but set only values of name and phone it don't shows any warning lines like intesection
