@@ -1,3 +1,4 @@
+//dynamic typing
 function canDrive(usr) {
     console.log("user is ", usr.name);
     if (usr.age >= 16) {

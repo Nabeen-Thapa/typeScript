@@ -14,7 +14,7 @@ console.log(newObj);
 //another in this intersection type we have to give all hte values if we don't give alll values it shows error
 //e.g
 let newObj1 :{name: string} & {age:number};
-newObj1 = {name : "new_Nabin"}
+newObj1 = {name : "new_Nabin", age: 40}
 console.log(newObj1);
 //this code shows errros like property age is missing , so it so warning in newObj1 
 //if we need satisfy only some values we use union
