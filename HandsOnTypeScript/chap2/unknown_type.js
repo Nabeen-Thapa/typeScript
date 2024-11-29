@@ -1,3 +1,4 @@
+"use strict";
 // let val: unknown = 22;
 // val = "string value";
 // val = new Array();
@@ -5,10 +6,11 @@
 // console.log(33);
 //above code show error in push due to the unknow variable "val"
 //so we use guards to prove the val is of cetain type
-var val = 22;
+let val = 22;
 val = "string value";
 val = new Array();
 if (val instanceof Array) {
     val.push(33);
 }
 console.log(val);
+//in this code we've wrapped push call with a test to see whether val is an instance of Array.

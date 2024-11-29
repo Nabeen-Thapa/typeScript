@@ -1,4 +1,5 @@
-var runner = function (miles) {
+"use strict";
+let runner = function (miles) {
     if (miles > 10) {
         return true;
     }

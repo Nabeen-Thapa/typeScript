@@ -1,10 +1,8 @@
-var Person = /** @class */ (function () {
-    function Person() {
-    }
-    return Person;
-}());
-var jill = {
+"use strict";
+class Person {
+}
+const jill = {
     name: "jill"
 };
-var person = jill;
+const person = jill;
 console.log(person);

@@ -1,9 +1,10 @@
+"use strict";
 //literature types
 // - similar to union
 // - but they use a set of hardcoded string or number values,
 // - can store data like array but in 
-var lite = "tom";
-lite = "linda";
-lite = "tom";
-console.log(lite);
+let literal_var = "tom";
+literal_var = "linda";
+literal_var = "tom";
+console.log(literal_var);
 //output : tom
