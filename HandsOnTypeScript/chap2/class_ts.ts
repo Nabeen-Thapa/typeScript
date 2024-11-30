@@ -28,10 +28,10 @@ console.log(person2.sayHello());
 //let above class personl as human
 class human {
     constructor(
-        readonly name : string,
-        private isCool : boolean,
-        protected email : string,
-        public pets :number
+        readonly name: string,// Public but readonly (cannot be changed after initialization).
+        private isCool: boolean,   // Private (only accessible within the class).
+        protected email: string,   // Protected (accessible within the class and subclasses).
+        public pets: number         // Public (accessible anywhere).
     ){}
     sayMyName() {
         console.log(`Your not Heisenberg, you're ${this.name}`);
