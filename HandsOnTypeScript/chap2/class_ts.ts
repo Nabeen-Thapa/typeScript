@@ -22,3 +22,21 @@ console.log(person2.sayHello());
 //output:
 //Hi, my name is danny and I have 1 pets.
 //Hi, my name is Ram and I have 5 pets.
+
+
+//the above conde can be cosnized as:
+//let above class personl as human
+class human {
+    constructor(
+        readonly name : string,
+        private isCool : boolean,
+        protected email : string,
+        public pets :number
+    ){}
+    sayMyName() {
+        console.log(`Your not Heisenberg, you're ${this.name}`);
+      }
+}
+const person3 = new human('Danny', false, 'dane.com', 1);
+console.log(person3.name);
+console.log(person3.sayMyName());
