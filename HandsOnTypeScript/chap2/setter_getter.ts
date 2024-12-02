@@ -20,7 +20,8 @@ class Speaker {
     }
     }
     const speaker = new Speaker("john");
-    speaker.Message = "hello";
+    //speaker.Message = "hello";
+    speaker.messages = "hello"
     console.log(speaker.Message);
 
     //it show error
